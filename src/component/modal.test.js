@@ -9,27 +9,17 @@ describe("PopUp Modal Test", () => {
         component = renderer.create(<ModalCmp />),
         mycmp = component.toJSON()
 
-
     it('Is a button and not disabled', () => {
         expect(mycmp.type).toEqual('button')
         expect(mycmp?.props?.disabled).toBeFalsy()
     })
-
-
+    
     it('On click, modal should appear', async () => {
         render(<ModalCmp />)
- 
-
         fireEvent.click(screen.getByTestId('openModal'))
- 
         expect(screen.getByText('Basic Modal')).toBeInTheDocument()
         expect(screen.getByText('Cancel')).toBeInTheDocument();
         expect(screen.getByText('OK')).toBeInTheDocument()
         expect(screen.queryByText('Close')).not.toBeInTheDocument()
-
- 
-
-
-        // const modalPopUp = screen.getByTestId('openModal')
     });
 })

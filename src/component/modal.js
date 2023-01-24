@@ -15,7 +15,7 @@ export const ModalCmp = () => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
-
+  
   return (
     <>
       <Button type="primary" onClick={showModal}  data-testid="openModal"  >Open Modal</Button>
