@@ -4,15 +4,9 @@ import './App.css';
 import { AllCmps } from './component/index';
 
 function App() {
-  // const component = renderer.create(
-  //   <Link page="http://www.facebook.com">Facebook</Link>,
-  // );
-  // let tree = component.toJSON();
  
-  // console.log({component, tree})
-
   return (
-    <div className="App">
+    <div  >
       <AllCmps/>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

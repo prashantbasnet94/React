@@ -1,1 +1,1 @@
-# Getting Started with React Component Test
+# react component tests

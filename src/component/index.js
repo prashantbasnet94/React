@@ -1,4 +1,5 @@
   import { LinkCmp } from "./link";
+import { LoginCmp } from "./login";
 import { ModalCmp } from "./modal";
 
 export const AllCmps = () => {
@@ -12,6 +13,10 @@ export const AllCmps = () => {
 
         <div>
             <ModalCmp/>
+        </div>
+
+        <div>
+            <LoginCmp/>
         </div>
         </>
     )
