@@ -13,7 +13,7 @@ describe("PopUp Modal Test", () => {
         expect(mycmp.type).toEqual('button')
         expect(mycmp?.props?.disabled).toBeFalsy()
     })
-    
+
     it('On click, modal should appear', async () => {
         render(<ModalCmp />)
         fireEvent.click(screen.getByTestId('openModal'))

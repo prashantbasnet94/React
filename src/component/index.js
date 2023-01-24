@@ -1,6 +1,6 @@
-import { LinkCmp } from "./link";
-import { LoginCmp } from "./login";
-import { ModalCmp } from "./modal";
+import { LinkCmp } from "./link/link";
+import { LoginCmp } from "./login/login";
+import { ModalCmp } from "./modal/modal";
 
 export const AllCmps = () => {
     return (
