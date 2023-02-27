@@ -1,11 +1,8 @@
- 
-import { AllCmps } from './component/index';
 
+ import {MyRouter} from './components/router'
 function App() {
   return (
-    <div  >
-      <AllCmps/>
-    </div>
+    <MyRouter/>
   );
 }
 
